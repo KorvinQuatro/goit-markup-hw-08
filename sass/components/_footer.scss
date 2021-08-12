@@ -1,0 +1,195 @@
+.footer {
+  background-color: $primary-fon-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer__wrapper-adress {
+  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}
+.footer__wrapper-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.footer__logo {
+  font-family: $logo-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.footer__logo-second {
+  color: $white;
+}
+.footer-adress {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer-adress__gps {
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 9px;
+}
+.footer-adress__mail {
+  color: $adress-text-color;
+  text-decoration: none;
+  margin-bottom: 9px;
+}
+.footer-adress__tel {
+  color: $adress-text-color;
+  text-decoration: none;
+}
+.sn-adress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (max-width: 479px) {
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.sn-adress__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.our-sn {
+  display: flex;
+}
+.our-sn__links {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.our-sn__link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  transition: background-color $animation;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.our-sn__icon {
+  fill: $white;
+}
+.mailing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+}
+.mailing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mailing__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  color: $white;
+}
+.mailing-form__input {
+  outline: none;
+  font-family: roboto, sans-serif;
+  height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $primary-fon-color;
+  color: $white;
+
+  &::placeholder {
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+}
+.mailing-button {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  color: $white;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+.mailing-button__text {
+  font-family: roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  color: $white;
+}
+.mailing-button__icon {
+  margin-left: 10px;
+  fill: $white;
+}
